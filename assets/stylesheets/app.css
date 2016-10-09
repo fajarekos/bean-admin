@@ -1,0 +1,9 @@
+body {
+  color: #333;
+  font-size: 13px;
+  background: #f5f5f5; }
+
+a {
+  color: #333; }
+  a:hover {
+    color: #000; }
