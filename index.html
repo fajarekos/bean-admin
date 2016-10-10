@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+        <meta name="decription" content="">
+        <meta name="author" content="">
+        <title>Bean Admin Free</title>
+
+        <!--call boostrap css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--call custom css-->
+        <link rel="stylesheet" href="assets/stylesheets/app.css">
+    </head>
+    <body>
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="#">Bean Admin</a>
+                    </div>
+                </div>
+
+                <form action="" class="navbar-form navbar-right">
+                    <input type="text" class="form-control" placeholder="Search Information">
+                    <button type="text" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="sidebar-wrapper">
+                <div class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">Bean Admin</a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Shortcut</a>
+                    </li>
+                    <li>
+                        <a href="#">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                </div>
+            </div>
+
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>Simple Sidebar</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae commodi minima, non unde dolorem? Fugiat maxime saepe quod quos reiciendis, quia debitis, quaerat enim beatae pariatur ratione nihil facilis eos!</p>
+                            <p>make sure to keep all page content within the <code>#page-content-wrapper</code></p>
+                            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                
+                $('#menu-toggle').on('click', function() {
+                    $('#wrapper').toggleClass('toggled')
+                })
+
+            })
+        </script>
+    </body>
+</html>
