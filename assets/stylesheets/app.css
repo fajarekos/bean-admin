@@ -1,5 +1,50 @@
 .navbar {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  min-height: 60px; }
+
+.navbar-default {
+  border: none;
+  background-color: #FFFFFF; }
+
+.navbar-header {
+  background-color: #3498db;
+  min-height: 60px;
+  width: 250px;
+  background: #2980b9;
+  background: -webkit-linear-gradient(left, #2980b9, #3498db);
+  background: -o-linear-gradient(right, #2980b9, #3498db);
+  background: -moz-linear-gradient(right, #2980b9, #3498db);
+  background: linear-gradient(to right, #2980b9, #3498db); }
+
+.navbar-brand {
+  line-height: 30px; }
+  .navbar-brand a {
+    color: #FFFFFF; }
+
+.navbar .form-control {
+  border-radius: 0;
+  border: none;
+  min-height: 44px;
+  box-shadow: none; }
+  .navbar .form-control:hover, .navbar .form-control:focus {
+    box-shadow: none; }
+
+.login-container {
+  max-width: 420px;
+  margin: auto;
+  padding-top: 6%; }
+
+.login-panel {
+  background-color: none;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 25px; }
+  .login-panel .panel-body {
+    background: #FFFFFF;
+    border: 1px solid #e4e5e7;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative; }
 
 body {
   color: #333;
