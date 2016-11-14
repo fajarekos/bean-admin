@@ -50,7 +50,7 @@ a
     height: 100%
     margin-left: -250px
     overflow-y: auto
-    background: #000
+    background: #34495e
     -webkit-transition: all 0.5s ease
     -moz-transition: all 0.5s ease
     -o-transition: all 0.5s ease
@@ -70,15 +70,23 @@ a
     list-style: none
     li
         text-indent: 20px
-        line-height: 40px
+        line-height: 50px
         a
             display: block
             text-decoration: none
-            color: #999999
+            color: #fff
+            position: relative
             &:hover
                 text-decoration: none
                 color: #FFFFFF
                 background: rgba(255, 255, 255, 0.2)
+                &::before
+                    content: ''
+                    position: absolute
+                    height: 100%
+                    width: 2px
+                    background: #fff
+                    left: 0
             &:active,
             &:focus
                 text-decoration: none
