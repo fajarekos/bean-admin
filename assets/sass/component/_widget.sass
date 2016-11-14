@@ -1,0 +1,44 @@
+@import "../includes/mixin"
+@import "../includes/variables"
+
+.ibox
+    background-color: $widget-default-background
+    color: $fonts-color-default
+    font-family: 'Roboto', sans-serif
+    .ibox--title
+        min-height: 48px
+        border-image: none
+        border-style: solid solid none
+        border-width: 2px 0 0
+        padding: 15px 15px 7px
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+        h5
+            float: left
+            display: inline-block
+            margin: 0 0 7px
+            padding: 0
+        &.ibox--title__purple
+            border-color: #9b59b6
+        &.ibox--title__green
+            border-color: #1abc9c
+        &.ibox--title__maroon
+            border-color: #e74c3c
+    .ibox--body
+        border-color: #e7eaec
+        border-image: none
+        border-style: solid solid none
+        border-width: 1px 0
+        padding: 15px 15px 7px
+        box-shadow: 0 3px 3px -3px #ccc
+        text-align: center
+        h3
+            margin-top: 0px
+            margin-bottom: 2px
+            font-weight: 400
+            color: #666
+            letter-spacing: 0.03em
+        span
+            font-size: 13px
+            font-weight: 400
+            color: #999

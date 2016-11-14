@@ -8,28 +8,36 @@
         <title>Bean Admin Free</title>
 
         <!--call boostrap css-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <!--call custom css-->
         <link rel="stylesheet" href="assets/stylesheets/app.css">
     </head>
     <body>
-        <div class="navbar navbar-default">
+        <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <div class="navbar-brand">
                     <a href="#">Bean Admin</a>
                 </div>
             </div>
-
-            <form action="" class="navbar-form navbar-left">
-                <input type="text" class="form-control" placeholder="Search Information">
-            </form>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <button class="btn btn-primary">+</button>
-                </li>
-            </ul>
-        </div>
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#menu-toggle" id="menu-toggle" style="font-size: 22px;"><i class="fa fa-bars"></i></a>
+                    </li>
+                    <li>
+                        <form action="" class="navbar-form navbar-left">
+                            <input type="text" class="form-control" placeholder="Search Information">
+                        </form>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <div class="sidebar-nav">
@@ -49,6 +57,14 @@
                         <a href="#">About</a>
                     </li>
                     <li>
+                          <a href="#demo4" data-toggle="collapse">Item 4</a>
+                          <ul class="collapse list-unstyled" id="demo4">
+                              <li style="background-color: #efefef; color: #666;"><a href="#">Subitem 1</a></li>
+                              <li style="background-color: #efefef; color: #666;"><a href="#">Subitem 2</a></li>
+                              <li style="background-color: #efefef; color: #666;"><a href="#">Subitem 3</a></li>
+                          </ul>
+                    </li>
+                    <li>
                         <a href="#">Services</a>
                     </li>
                 </div>
@@ -57,11 +73,59 @@
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <h1>Simple Sidebar</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae commodi minima, non unde dolorem? Fugiat maxime saepe quod quos reiciendis, quia debitis, quaerat enim beatae pariatur ratione nihil facilis eos!</p>
-                            <p>make sure to keep all page content within the <code>#page-content-wrapper</code></p>
-                            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="ibox">
+                                        <div class="ibox--title ibox--title__maroon">
+                                            <h5>Income</h5>
+                                            <span for="" class="label label-default pull-right">Mounthly</span>
+                                        </div>
+                                        <div class="ibox--body">
+                                            <h3>450.790.000</h3>
+                                            <span>Total Incomes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ibox">
+                                        <div class="ibox--title ibox--title__green">
+                                            <h5>Orders</h5>
+                                            <span for="" class="label label-success pull-right">Anual</span>
+                                        </div>
+                                        <div class="ibox--body">
+                                            <h3>79.000</h3>
+                                            <span>New Orders</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-md">
+                                <div class="col-md-6">
+                                    <div class="ibox">
+                                        <div class="ibox--title ibox--title__maroon">
+                                            <h5>Income</h5>
+                                            <span for="" class="label label-default pull-right">Mounthly</span>
+                                        </div>
+                                        <div class="ibox--body">
+                                            <h3>450.790.000</h3>
+                                            <span>Total Incomes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ibox">
+                                        <div class="ibox--title ibox--title__green">
+                                            <h5>Orders</h5>
+                                            <span for="" class="label label-success pull-right">Anual</span>
+                                        </div>
+                                        <div class="ibox--body">
+                                            <h3>79.000</h3>
+                                            <span>New Orders</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,7 +135,7 @@
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                
+
                 $('#menu-toggle').on('click', function() {
                     $('#wrapper').toggleClass('toggled')
                 })

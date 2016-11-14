@@ -1,19 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700')
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700')
 @import includes/variables
 @import includes/mixin
 
 @import component/navbar
 @import pages/login
 
-body 
+body
     color: $fonts-color-default
-    font-size: 13px;
+    font-size: 13px
     background: $background-color-default
     overflow-x: hidden
+    font-family: 'Raleway', sans-serif
+    font-weight: 500
 
-a 
+a
     color: $fonts-color-default
-    &:hover 
+    &:hover
         color: $fonts-color-default-hover
+
+.mt-xs
+    margin-top: 15px
+.mt-sm
+    margin-top: 20px
+.mt-md
+    margin-top: 25px
+
+
 
 #wrapper
     padding-left: 0
@@ -21,15 +34,15 @@ a
     -moz-transition: all 0.5s ease
     -o-transition: all 0.5s ease
     transition: all 0.5s ease
-    &.toggled 
+    &.toggled
         padding-left: 250px
-        #sidebar-wrapper 
+        #sidebar-wrapper
             width: 250px
         #page-content-wrapper
             position: absolute
             margin-right: -250px
 
-#sidebar-wrapper 
+#sidebar-wrapper
     z-index: 1000
     position: fixed
     left: 250px
@@ -48,7 +61,7 @@ a
     position: absolute
     padding: 15px
 
-.sidebar-nav 
+.sidebar-nav
     position: absolute
     top: 0
     width: 250px
@@ -69,17 +82,17 @@ a
             &:active,
             &:focus
                 text-decoration: none
-    > .sidebar-brand 
+    > .sidebar-brand
         height: 65px
         font-size: 18px
         line-height: 60px
-        a 
+        a
             color: #999999
             &:hover
                 color: #FFFFFF
                 background: none
 @media(min-width:768px)
-    #wrapper 
+    #wrapper
         padding-left: 250px
         &.toggled
             padding-left: 0
@@ -88,8 +101,10 @@ a
             #page-content-wrapper
                 position: relative
                 margin-right: 0
-    #sidebar-wrapper 
+    #sidebar-wrapper
         width: 250px
     #page-content-wrapper
         padding: 20px
         position: relative
+
+@import component/widget
