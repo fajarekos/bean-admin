@@ -1,118 +1,23 @@
+// Import fonts library
+// font using google fonts
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700')
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700')
+
+// Import mixin and variables
 @import includes/variables
 @import includes/mixin
 
+// Import global class
+@import component/global
+
+// Import sidebar
 @import component/navbar
-@import pages/login
+@import component/sidebar
 
-body
-    color: $fonts-color-default
-    font-size: 13px
-    background: $background-color-default
-    overflow-x: hidden
-    font-family: 'Raleway', sans-serif
-    font-weight: 500
-
-a
-    color: $fonts-color-default
-    &:hover
-        color: $fonts-color-default-hover
-
-.mt-xs
-    margin-top: 15px
-.mt-sm
-    margin-top: 20px
-.mt-md
-    margin-top: 25px
-
-
-
-#wrapper
-    padding-left: 0
-    -webkit-transition: all 0.5s ease
-    -moz-transition: all 0.5s ease
-    -o-transition: all 0.5s ease
-    transition: all 0.5s ease
-    &.toggled
-        padding-left: 250px
-        #sidebar-wrapper
-            width: 250px
-        #page-content-wrapper
-            position: absolute
-            margin-right: -250px
-
-#sidebar-wrapper
-    z-index: 1000
-    position: fixed
-    left: 250px
-    width: 0
-    height: 100%
-    margin-left: -250px
-    overflow-y: auto
-    background: #34495e
-    -webkit-transition: all 0.5s ease
-    -moz-transition: all 0.5s ease
-    -o-transition: all 0.5s ease
-    transition: all 0.5s ease
-
-#page-content-wrapper
-    width: 100%
-    position: absolute
-    padding: 15px
-
-.sidebar-nav
-    position: absolute
-    top: 0
-    width: 250px
-    margin: 0
-    padding: 0
-    list-style: none
-    li
-        text-indent: 20px
-        line-height: 50px
-        a
-            display: block
-            text-decoration: none
-            color: #fff
-            position: relative
-            &:hover
-                text-decoration: none
-                color: #FFFFFF
-                background: rgba(255, 255, 255, 0.2)
-                &::before
-                    content: ''
-                    position: absolute
-                    height: 100%
-                    width: 2px
-                    background: #fff
-                    left: 0
-            &:active,
-            &:focus
-                text-decoration: none
-    > .sidebar-brand
-        height: 65px
-        font-size: 18px
-        line-height: 60px
-        a
-            color: #999999
-            &:hover
-                color: #FFFFFF
-                background: none
-@media(min-width:768px)
-    #wrapper
-        padding-left: 250px
-        &.toggled
-            padding-left: 0
-            #sidebar-wrapper
-                width: 0
-            #page-content-wrapper
-                position: relative
-                margin-right: 0
-    #sidebar-wrapper
-        width: 250px
-    #page-content-wrapper
-        padding: 20px
-        position: relative
-
+// Import UI custom component
 @import component/widget
+@import component/card
+@import component/tabs
+
+// Import css pages
+@import pages/login
